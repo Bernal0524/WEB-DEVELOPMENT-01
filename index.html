@@ -1,18 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PI</title>
+    <title>Página de Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Para dispositivos pequeños */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>Página de Inicio</h1>
-    <a href="20235915_GUIA01/estilos_embebidos.html">estilos embebidos</a>
-    <a href="20235915_GUIA01/ejemplo2.html">Ejemplo 2</a>
-    <a href="20235915_GUIA01/paises.html">Centroamerica</a>
-    <a href="20235915_GUIA01/My_Favorite_Series.html">La Casa del Dragón</a>
-    <a href="20235915_Guia2/pelicula.html">El discurso del Rey</a>
-    <a href="20235915_Guia2/tablero.html">Tablero de Damas</a>
-    <a href="20235915_Guia2/My_Biography.html">Biografia</a>
+    <nav>
+        <a href="20235915_GUIA01/estilos_embebidos.html">Estilos Embebidos</a>
+        <a href="20235915_GUIA01/ejemplo2.html">Ejemplo 2</a>
+        <a href="20235915_GUIA01/paises.html">Centroamérica</a>
+        <a href="20235915_GUIA01/My_Favorite_Series.html">La Casa del Dragón</a>
+        <a href="20235915_Guia2/pelicula.html">El Discurso del Rey</a>
+        <a href="20235915_Guia2/tablero.html">Tablero de Damas</a>
+        <a href="20235915_Guia2/My_Biography.html">Biografía</a>
+    </nav>
 </body>
 </html>
