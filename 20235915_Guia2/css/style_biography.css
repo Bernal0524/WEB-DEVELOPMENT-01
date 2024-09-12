@@ -1,0 +1,198 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0; /* Ajustado padding */
+    width: 100%;
+    margin: 0; /* Sin margen superior para alinear con la barra de búsqueda */
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem; /* Tamaño del título principal */
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f0c040;
+}
+
+/* Secciones */
+section {
+    padding: 30px;
+    margin: 40px auto; /* Ajustado margen superior para separar del encabezado */
+    max-width: 800px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0c040;
+    padding-bottom: 5px;
+    color: #333;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #f0c040;
+}
+
+.profile-image {
+    max-width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+p, ul, li {
+    text-align: justify;
+}
+
+ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0; /* Reducido padding en el pie de página */
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+
+.contact-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.contact-info ul li {
+    margin-bottom: 5px;
+}
+
+.contact-info ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info ul li a:hover {
+    color: #f0c040;
+}
+
+footer p {
+    margin-top: 10px; /* Reducido margen superior */
+    font-size: 0.8rem; /* Reducido tamaño de fuente */
+    color: #ccc;
+}
+
+/* Estilos específicos para la sección de formación complementaria */
+#training h3 {
+    color: #f0c040;
+    border-bottom: 1px solid #f0c040;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+#training p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Estilos para los logros */
+#achievements ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#achievements ul li {
+    background: #f4f4f4;
+    border-left: 5px solid #f0c040;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#achievements ul li strong {
+    color: #333;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #f0c040;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

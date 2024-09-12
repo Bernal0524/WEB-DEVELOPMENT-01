@@ -1,0 +1,194 @@
+/* Estilos de fuente y color usando Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: black;
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    color: #ecf0f1; /* Color de texto claro para contraste con la imagen de fondo */
+    line-height: 1.6; /* Mejorando la legibilidad con mayor interlineado */
+    margin: 0;
+    padding: 0;
+}
+
+/* Título principal */
+.main-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #e74c3c; /* Color rojo para el título principal */
+    font-size: 3em; /* Tamaño de fuente más grande */
+    text-align: center;
+    margin-top: 20px; /* Espacio superior para separar del borde */
+    margin-bottom: 10px; /* Espacio inferior para separación */
+    font-weight: bold; /* Negrita */
+}
+
+/* Subtítulo */
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #e74c3c; /* Color rojo para mayor contraste */
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px; /* Espacio inferior para separar del contenido */
+    font-weight: bold; /* Negrita */
+}
+
+/* Texto introductorio */
+.intro-text {
+    font-size: 1.2em; /* Texto introductorio ligeramente más grande */
+    color: #ffffff; /* Color blanco para mayor contraste */
+    text-align: center;
+    margin: 0 10%; /* Margen lateral para centrar el texto */
+}
+
+/* Imagen introductoria */
+.intro {
+    display: block;
+    margin: 20px auto; /* Centrar la imagen y agregar espacio superior */
+    width: 80%;
+    max-width: 600px; /* Limitar tamaño máximo de la imagen */
+    height: auto;
+    border-radius: 10px; /* Esquinas redondeadas para la imagen */
+}
+
+/* Sección del reparto */
+.reparto {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 800px; /* Limitar el ancho máximo de la sección */
+}
+
+/* Títulos de las casas */
+.reparto h3 {
+    color: #e74c3c; /* Color rojo para los títulos de las casas */
+    font-size: 2em; /* Tamaño más grande para destacar la sección */
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold; /* Negrita */
+}
+
+.reparto article h4 {
+    color: #ffffff; /* Color blanco para los nombres de los actores */
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffffff; /* Línea inferior blanca para resaltar */
+    padding-bottom: 5px;
+}
+
+/* Listas del reparto */
+.reparto ul {
+    list-style-type: none; /* Sin viñetas en la lista */
+    padding: 0;
+}
+
+.reparto ul li {
+    font-size: 1.1em;
+    color: #ffffff; /* Color blanco para los elementos de la lista */
+    margin-bottom: 5px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.reparto ul li::before {
+    content: "•"; /* Añadiendo un símbolo personalizado */
+    color: #e74c3c; /* Color del símbolo antes de cada elemento */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #34495e; /* Fondo oscuro para el pie de página */
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 1.1em;
+    text-align: center;
+    margin: 0;
+    color: #ecf0f1; /* Color claro para el texto del pie de página */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Sección de resumen de temporadas */
+#resumen {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 800px; /* Limitar el ancho máximo de la sección */
+}
+
+/* Título de la tabla */
+#resumen h3 {
+    color: #e74c3c; /* Color rojo para el título de la tabla */
+    font-size: 2em; /* Tamaño más grande para el título */
+    text-align: center;
+    margin-bottom: 30px; /* Espacio inferior para separar del contenido */
+    font-weight: bold; /* Negrita */
+}
+
+/* Contenedor de la tabla */
+.summary-table-container {
+    display: flex;
+    justify-content: center; /* Centra la tabla horizontalmente */
+    margin: 20px 0; /* Espacio superior e inferior alrededor de la tabla */
+}
+
+/* Tabla de resumen */
+.summary-table {
+    width: 100%; /* Ajusta el ancho de la tabla */
+    border-collapse: collapse;
+    background-color: #34495e; /* Fondo oscuro para la tabla */
+    color: #ecf0f1; /* Texto claro para contraste */
+    border-radius: 8px; /* Bordes redondeados para la tabla */
+    overflow: hidden; /* Esconde bordes de la tabla cuando se usa border-radius */
+}
+
+.summary-table th, .summary-table td {
+    border: 1px solid #ddd; /* Bordes suaves y grises */
+    padding: 10px; /* Espacio dentro de las celdas */
+    text-align: center;
+}
+
+.summary-table th {
+    background-color: #2980b9; /* Fondo azul para encabezados */
+    color: white; /* Texto en blanco para contraste */
+    font-weight: bold;
+}
+
+.summary-table td {
+    background-color: #2c3e50; /* Fondo oscuro para las celdas */
+}
+
+/* Estilo para la sección "Conocer Más" */
+.more-info {
+    margin: 40px auto; /* Espaciado exterior arriba y abajo */
+    width: 90%;
+    max-width: 800px; /* Limitar el ancho máximo de la sección */
+    padding: 20px; /* Espaciado interior */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: black; /* Fondo oscuro similar al resto */
+    color: #ecf0f1; /* Color claro para el texto */
+    text-align: center; /* Centramos el texto */
+}
+
+.more-info h3 {
+    color: #e74c3c; /* Color rojo para el título */
+    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat para el título */
+    font-weight: 600; /* Negrita */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.more-info p {
+    font-family: 'Roboto', sans-serif; /* Fuente Roboto para el párrafo */
+    color: #ecf0f1; /* Color del texto */
+    margin-bottom: 10px; /* Espacio debajo del párrafo */
+}
+
+.more-info a {
+    color: #e74c3c; /* Color del enlace */
+    text-decoration: none; /* Quitar subrayado */
+    font-weight: 700; /* Negrita */
+}
+
+.more-info a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
