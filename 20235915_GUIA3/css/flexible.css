@@ -23,28 +23,30 @@ h1{
 /* PARTE SUPERIOR */
 #superior{
     width: 100%;
-    padding: 2% 0px; /* Modificado */
+    padding: 2% 0px; /* MODIFICACIÓN 1 */
+    background-color: #464d52;
 }
 
 #encabezado{
-    margin: 2% 0px; /* Nuevo selector agregado */
-    width: 80%; /* Modificado */
-    min-width: 650px; /* Ya no reaccionará si la caja es más pequeña de 650px */
-    max-width: 960px; /* Ya no reaccionará si la caja es más grande que 960px */
-}
-
-#logo {
-    margin: 2% 0px; /* Nuevo selector agregado */
-    width: 21%; /* Nuevo selector agregado */
+    margin: 0px auto;
+    width: 80%; /* MODIFICACIÓN 2 */
+    min-width: 650px; /* MODIFICACIÓN 2 */
+    max-width: 960px; /* MODIFICACIÓN 2 */
 }
 
 #descripcion{
-    width: 37.5%; /* Modificado */
-    height: auto; /* Modificado */
+    width: 37.5%; /* MODIFICACIÓN 3 */
+    height: auto; /* MODIFICACIÓN 3 */
+    background-color: #888;
+    float: left;
 }
 
 #descripcion p{
-    margin: 5%; /* Modificado */
+    margin: 5%; /* MODIFICACIÓN 4 */
+    color: white;
+    font-weight: bold;
+    line-height: 180%;
+    text-align: justify;
 }
 
 /* Estilos adicionales para #imgDesc */
@@ -54,16 +56,23 @@ h1{
 
 #imgDesc img {
     float: left;
-    width: 62.5%; /* Modificado */
-    height: auto; /* Modificado */
+    width: 62.5%; /* MODIFICACIÓN 6 */
+    height: auto; /* MODIFICACIÓN 6 */
+}
+
+/* Logo */
+#superior #encabezado #logo {
+    margin: 2% 0px; /* MODIFICACIÓN 5 */
+    width: 21%; /* MODIFICACIÓN 5 */
 }
 
 /*Contenido principal de las paginas*/
 #contenido{
-    width: 80%; /* Modificado */
-    margin: 0px auto;
-    min-width: 650px; /* Ya no reaccionará si la caja es más pequeña de 650px */
-    max-width: 960px; /* Ya no reaccionará si la caja es más grande que 960px */
+    width: 80%; /* MODIFICACIÓN 7 */
+    margin: 0px auto; /* MODIFICACIÓN 7 */
+    min-width: 650px; /* MODIFICACIÓN 7 */
+    max-width: 960px; /* MODIFICACIÓN 7 */
+    clear: left;
 }
 
 /*PIE DE LA PAGINA*/
@@ -81,19 +90,19 @@ footer{
 /* CONTENIDO DE LA PAGINA INDEX*/
 
 .plan{
-    width: 26.7%; /* Modificado */
-    padding: 2%; /* Modificado */
+    width: 26.7%; /* MODIFICACIÓN 8 */
+    padding: 2%; /* MODIFICACIÓN 8 */
     background-color: white;
-    margin: 30px 1.5%; /* Modificado */
+    margin: 30px 1.5%; /* MODIFICACIÓN 8 */
     border: solid 1px black;
     border-radius: 10px;
     float: left;
     text-align: justify;
 }
 
-.plan img { /* Nuevo selector agregado */
-    width: 100%;
-    height: auto;
+.plan img {
+    width: 100%; /* MODIFICACIÓN 9 */
+    height: auto; /* MODIFICACIÓN 9 */
 }
 
 /* Primer div, cuarto div,.... */
@@ -117,10 +126,12 @@ footer{
     vertical-align: middle;
     cursor: pointer;
     transition: background 1s;
+
 }
 
 .boton:hover{
     background: #5077c7;
+
 }
 
 .boton a{
@@ -133,9 +144,14 @@ footer{
 /* CONTENIDO DE LA PAGINA PLANES */
 
 .planes{
-    width: 94%; /* Modificado */
-    padding: 1% 3%; /* Modificado */
+    width: 94%; /* MODIFICACIÓN 10 */
     background: white;
+    padding: 1% 3%; /* MODIFICACIÓN 10 */
+}
+
+.planes img {
+    width: 100%; /* MODIFICACIÓN 11 */
+    border-radius: 15px; /* MODIFICACIÓN 11 */
 }
 
 .planes h1{
@@ -151,11 +167,6 @@ footer{
     font-weight: bold;
 }
 
-.planes img { /* Nuevo selector agregado */
-    width: 100%;
-    border-radius: 15px;
-}
-
 /* CONTENIDO DE LA PAGINA GALERIA */
 #galeria .plan p{
     text-align: center;
@@ -164,8 +175,9 @@ footer{
 
 #galeria .plan{
     font-size: 1em;
-    margin: 30px 1.4% 10px; /* Modificado */
-    display: inline-block; /* Modificado */
-    float: none; /* Modificado */
-    vertical-align: top; /* Modificado */
+    margin: 30px 1.4% 10px; /* MODIFICACIÓN 12 */
+    padding-bottom: 1px;
+    display: inline-block; /* MODIFICACIÓN 12 */
+    float: none; /* MODIFICACIÓN 12 */
+    vertical-align: top; /* MODIFICACIÓN 12 */
 }

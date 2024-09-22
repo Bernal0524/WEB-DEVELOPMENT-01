@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Muli);
+@import url('https://fonts.googleapis.com/css?family=Muli');
 
 * {
     margin: 0;
@@ -8,28 +8,30 @@
 body {
     font-family: 'Muli', sans-serif;
     text-align: justify;
-    padding-top: 130px; /* Añadir espacio para el header fijo */
-    padding-bottom: 50px; /* Añadir espacio para el footer fijo */
+    margin-top: 130px; /* Espacio para el header fijo */
+    margin-bottom: 50px; /* Espacio para el footer fijo */
 }
 
 header {
-    position: fixed; /* Fijo en la parte superior */
-    top: 0;
-    left: 0;
-    right: 0;
     background: #16A085;
     height: 130px;
-    z-index: 1000; /* Asegurarse de que esté encima del contenido */
+    overflow: hidden; /* Ocultar desbordamiento */
+    position: fixed; /* Fijar el header en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegurar que cubra todo el ancho */
+    z-index: 1; /* Ajustado para estar por debajo del contenido */
 }
 
 footer {
-    position: fixed; /* Fijo en la parte inferior */
-    bottom: 0;
-    left: 0;
-    right: 0;
+    margin-top: 20px;
     background: #16A085;
     height: 50px;
-    z-index: 1000; /* Asegurarse de que esté encima del contenido */
+    position: fixed; /* Fijar el footer en la parte inferior */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Asegurar que cubra todo el ancho */
+    z-index: 1; /* Ajustado para estar por debajo del contenido */
 }
 
 header div, footer div {
@@ -54,6 +56,9 @@ section {
     display: flex; /* Flexbox para columnas */
     flex-wrap: wrap;
     justify-content: space-between;
+    overflow: hidden; /* Solucionar el problema de flujo */
+    position: relative; /* Para el posicionamiento absoluto del segundo artículo */
+    z-index: 2; /* Ajustado para estar por encima del header y footer */
 }
 
 section article {
@@ -64,6 +69,7 @@ section article {
     border: 2px dashed #16A085;
     padding: 1%;
     box-sizing: border-box; /* Para incluir borde y padding en el ancho */
+    overflow: hidden; /* Ocultar desbordamiento de los artículos */
 }
 
 section article img {
@@ -79,4 +85,28 @@ section article h3 {
 
 footer div {
     padding-top: 1rem; /* Separar el texto del borde superior */
+}
+
+section article:nth-child(2) {
+    background-color: rgba(70, 130, 180, 0.9); /* Fondo con transparencia */
+    position: relative; /* Posicionamiento relativo */
+    left: 100px;
+    top: 50px;
+}
+
+/* Para posicionamiento absoluto */
+section article:nth-child(2) {
+    position: absolute; /* Cambiado a posicionamiento absoluto */
+    left: 100px;
+    top: 50px;
+}
+
+/* Ocultar el segundo artículo con visibility */
+section article:nth-child(2) {
+    visibility: hidden; /* Oculta el artículo pero mantiene el espacio */
+}
+
+/* Ocultar el segundo artículo completamente con display */
+section article:nth-child(2) {
+    display: none; /* Oculta el artículo y elimina el espacio */
 }
