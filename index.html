@@ -18,11 +18,33 @@
             margin-bottom: 40px;
         }
 
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            color: #007BFF;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
         nav {
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
+            flex-direction: column;
+            align-items: center;
         }
 
         a {
@@ -33,6 +55,7 @@
             color: white;
             border-radius: 5px;
             font-weight: bold;
+            margin: 5px 0;
             transition: background-color 0.3s ease;
         }
 
@@ -43,36 +66,44 @@
         /* Para dispositivos pequeños */
         @media (max-width: 600px) {
             nav {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            a {
                 width: 100%;
-                text-align: center;
             }
         }
     </style>
 </head>
 <body>
     <h1>Página de Inicio</h1>
-    <nav>
-        <h2>Guía 1</h2>
-        <a href="20235915_GUIA01/estilos_embebidos.html">Estilos Embebidos</a>
-        <a href="20235915_GUIA01/ejemplo2.html">Literatura</a>
-        <a href="20235915_GUIA01/paises.html">Centroamérica</a>
-        <a href="20235915_GUIA01/My_Favorite_Series.html">La Casa del Dragón</a>
-        <h2>Guía 2</h2>
-        <a href="20235915_Guia2/pelicula.html">El Discurso del Rey</a>
-        <a href="20235915_Guia2/tablero.html">Tablero de Damas</a>
-        <a href="20235915_Guia2/My_Biography.html">Biografía</a>
-        <h2>Guía 3</h2>
-        <a href="20235915_GUIA3/oscares.html">Oscares</a>
-        <a href="20235915_GUIA3/menu_horizontal.html">Menú Horizontal</a>
-        <a href="20235915_GUIA3/index.html">Inicio Viajeros</a>
-        <a href="20235915_GUIA3/planes.html">Planes Viajeros</a>
-        <a href="20235915_GUIA3/galeria.html">Galeria Viajeros</a>
-        <a href="20235915_GUIA3/analisis.html">posicionamiento y z-index</a>
-    </nav>
+    <div class="container">
+        <section>
+            <h2>Guía 1</h2>
+            <nav>
+                <a href="20235915_GUIA01/estilos_embebidos.html">Estilos Embebidos</a>
+                <a href="20235915_GUIA01/ejemplo2.html">Literatura</a>
+                <a href="20235915_GUIA01/paises.html">Centroamérica</a>
+                <a href="20235915_GUIA01/My_Favorite_Series.html">La Casa del Dragón</a>
+            </nav>
+        </section>
+
+        <section>
+            <h2>Guía 2</h2>
+            <nav>
+                <a href="20235915_Guia2/pelicula.html">El Discurso del Rey</a>
+                <a href="20235915_Guia2/tablero.html">Tablero de Damas</a>
+                <a href="20235915_Guia2/My_Biography.html">Biografía</a>
+            </nav>
+        </section>
+
+        <section>
+            <h2>Guía 3</h2>
+            <nav>
+                <a href="20235915_GUIA3/oscares.html">Oscares</a>
+                <a href="20235915_GUIA3/menu_horizontal.html">Menú Horizontal</a>
+                <a href="20235915_GUIA3/index.html">Inicio Viajeros</a>
+                <a href="20235915_GUIA3/planes.html">Planes Viajeros</a>
+                <a href="20235915_GUIA3/galeria.html">Galería Viajeros</a>
+                <a href="20235915_GUIA3/analisis.html">Posicionamiento y z-index</a>
+            </nav>
+        </section>
+    </div>
 </body>
 </html>
