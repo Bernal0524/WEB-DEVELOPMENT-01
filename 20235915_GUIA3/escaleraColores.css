@@ -1,0 +1,104 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+hr {
+    margin: 40px 0;
+}
+
+p {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Contenedor general de cada resultado */
+.container {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    margin: 0 auto 40px;
+}
+
+/* Estilos para el primer resultado (arriba hacia abajo, desplazamiento a la derecha) */
+.resultado1 div {
+    position: absolute;
+}
+
+#diez_de_diamantes1 {
+    top: 0;
+    left: 0;
+    z-index: 1; /* El 10 de diamantes va al fondo */
+}
+
+#sota_de_diamantes1 {
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+#reina_de_diamantes1 {
+    top: 40px;
+    left: 40px;
+    z-index: 3;
+}
+
+#rey_de_diamantes1 {
+    top: 60px;
+    left: 60px;
+    z-index: 4;
+}
+
+#as_de_diamantes1 {
+    top: 80px;
+    left: 80px;
+    z-index: 5; /* El As de diamantes va al frente */
+}
+
+/* Estilos para el segundo resultado (de abajo hacia arriba, desplazamiento a la derecha) */
+.resultado2 div {
+    position: absolute;
+}
+
+#diez_de_diamantes2 {
+    top: 0;
+    left: 0;
+    z-index: 5; /* El 10 de diamantes ahora está al frente */
+}
+
+#sota_de_diamantes2 {
+    top: 20px;
+    left: 20px;
+    z-index: 4;
+}
+
+#reina_de_diamantes2 {
+    top: 40px;
+    left: 40px;
+    z-index: 3;
+}
+
+#rey_de_diamantes2 {
+    top: 60px;
+    left: 60px;
+    z-index: 2;
+}
+
+#as_de_diamantes2 {
+    top: 80px;
+    left: 80px;
+    z-index: 1; /* El As de diamantes está al fondo */
+}

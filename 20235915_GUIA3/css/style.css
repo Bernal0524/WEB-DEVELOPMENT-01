@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    text-align: justify;
+    padding-top: 130px; /* Añadir espacio para el header fijo */
+    padding-bottom: 50px; /* Añadir espacio para el footer fijo */
+}
+
+header {
+    position: fixed; /* Fijo en la parte superior */
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #16A085;
+    height: 130px;
+    z-index: 1000; /* Asegurarse de que esté encima del contenido */
+}
+
+footer {
+    position: fixed; /* Fijo en la parte inferior */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #16A085;
+    height: 50px;
+    z-index: 1000; /* Asegurarse de que esté encima del contenido */
+}
+
+header div, footer div {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+section {
+    margin: 0 auto;
+    width: 90%;
+    display: flex; /* Flexbox para columnas */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section article {
+    font-size: 0.9rem;
+    height: 340px;
+    width: 32.33%; /* Ajustado por el margen */
+    margin: 0.5%;
+    border: 2px dashed #16A085;
+    padding: 1%;
+    box-sizing: border-box; /* Para incluir borde y padding en el ancho */
+}
+
+section article img {
+    height: 180px;
+    max-width: 80%;
+    margin: 5px auto; /* Centrar la imagen */
+    display: block; /* Convertir la imagen en un elemento de bloque */
+}
+
+section article h3 {
+    text-align: center; /* Centrar los títulos */
+}
+
+footer div {
+    padding-top: 1rem; /* Separar el texto del borde superior */
+}
