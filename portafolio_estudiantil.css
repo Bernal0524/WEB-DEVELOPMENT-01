@@ -1,0 +1,174 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #FFFFFF; /* Texto principal en blanco */
+    background-color: #000000; /* Fondo negro */
+}
+
+/* Encabezado */
+header {
+    background-color: #34495e; /* Color del encabezado */
+    color: #FFD700; /* Texto en dorado */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra más prominente */
+}
+
+h1 {
+    font-size: 2.5rem; /* Aumentar el tamaño del título */
+    font-weight: bold; /* Hacer el texto más contundente */
+}
+
+/* Sección principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #2C3E50; /* Color de fondo oscuro para secciones */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Sombra más fuerte */
+}
+
+/* Sección de datos personales */
+.datos-personales {
+    display: flex;
+    align-items: center;
+    background-color: #1ABC9C; /* Color de sección más fuerte */
+    color: white;
+    padding: 20px; /* Añadir padding */
+    border-radius: 5px;
+}
+
+.datos-personales .perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px; /* Espacio entre imagen y texto */
+    border: 3px solid #FFD700; /* Borde dorado alrededor de la imagen */
+}
+
+.datos-personales .informacion {
+    max-width: 600px; /* Limita el ancho del texto */
+}
+
+/* Títulos */
+h2 {
+    font-size: 2rem; /* Aumentar el tamaño */
+    margin-bottom: 10px;
+    color: #FFD700; /* Color dorado para los subtítulos */
+    text-transform: uppercase; /* Convertir a mayúsculas para un impacto adicional */
+}
+
+h3 {
+    font-size: 1.6rem; /* Aumentar el tamaño de los subtítulos */
+    margin-top: 10px;
+    color: #1ABC9C; /* Color cian profesional */
+}
+
+/* Navegación de guías */
+.guia {
+    margin: 15px 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    padding: 10px 15px;
+    background-color: #3498db; /* Color de botón */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Añadir transformación al hover */
+}
+
+nav a:hover {
+    background-color: #f0c040; /* Color de hover */
+    transform: translateY(-2px); /* Efecto de elevar el botón */
+}
+
+/* Estilos para listas */
+ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding-left: 0; /* Elimina el espacio a la izquierda */
+}
+
+/* Estilos para recursos adicionales */
+.recursos-adicionales {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten a la siguiente línea */
+    gap: 20px; /* Espacio entre tarjetas */
+}
+
+.recurso {
+    flex: 1 1 200px; /* Las tarjetas se expanden, se encogen y tienen un ancho base */
+    background-color: #d4d4d4; /* Color de fondo para las tarjetas */
+    color: #000; /* Color de texto negro para contrastar */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añadir animación para el hover */
+}
+
+.recurso:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más prominente al hover */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #34495e; /* Color profesional */
+    color: #FFD700; /* Texto dorado */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .perfil {
+        width: 120px;
+        height: 120px;
+    }
+
+    .recurso {
+        flex: 1 1 100%; /* Tarjetas ocupan todo el ancho en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Ajuste del tamaño del encabezado */
+    }
+
+    h2 {
+        font-size: 1.6rem; /* Ajuste del tamaño del encabezado */
+    }
+
+    h3 {
+        font-size: 1.4rem; /* Ajuste del tamaño del encabezado */
+    }
+}
