@@ -62,6 +62,17 @@ p.terminos {
     margin-left: 185px;
 }
 
+.boton {
+    background-color: rgba(164,179,87,1);
+    border-radius: 15px;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    font-family: 'Century Gothic', sans-serif;
+    margin-top: 3px;
+    margin-left: 185px;
+}
+
 /* Estilos para .formdatos */
 .formdatos {
     color: #fff;
