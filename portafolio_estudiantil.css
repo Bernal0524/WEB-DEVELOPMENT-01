@@ -35,7 +35,7 @@ main {
 
 /* Secciones */
 section {
-    margin-bottom: 20px;
+    margin: 20px; /* Añadir margen entre secciones */
     padding: 20px;
     background: #2C3E50; /* Color de fondo oscuro para secciones */
     border-radius: 5px;
