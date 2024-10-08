@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body id="login">
+    <form action="Ejercicio2.html" method="post">
+        <h1>Crear Cuenta</h1>
+        <fieldset id="logindatos">
+            <input type="image" src="img/user.png" alt="Imagen de usuario" class="img" id="user-image">
+            <input type="text" id="nombre" value="" pattern="^[a-zA-Z\s]+$"
+                   title="Solo se acepta letras" class="control" 
+                   placeholder="Nombre" required><br>
+
+            <input type="image" src="img/tel.png" alt="Imagen de teléfono" class="img" id="tel-image">
+            <input type="tel" id="telefono" value="" pattern="^[0-9]{4}-?[0-9]{4}$"
+                   title="Solo acepta números en el siguiente formato: 2222-2222" 
+                   class="control" placeholder="Número de teléfono" required><br>
+
+            <input type="image" src="img/email.png" alt="Imagen de correo" class="img" id="email-image">
+            <input type="email" id="correo" value="" title="Formato de correo: NombreCorreo@dominio"
+                   class="control" placeholder="Correo Electrónico" required><br>
+
+            <input type="image" src="img/pass.png" alt="Imagen de contraseña" class="img" id="pass-image">
+            <input type="password" id="password" value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}"
+                   title="Su contraseña debe ser de 6 a 15 caracteres y debe incluir una letra mayúscula, minúscula y un número" 
+                   class="control" placeholder="Contraseña" required><br>
+
+            <input type="checkbox" id="terminos" value="acepto" class="terminos" required>
+            <p class="terminos">Acepto Términos, Condiciones y Política de Privacidad</p>
+
+            <button id="boton" type="submit">Crear Cuenta</button>
+        </fieldset>
+    </form>
+</body>
+</html>
