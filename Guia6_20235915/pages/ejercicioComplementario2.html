@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/stylesFunciones.css" rel="stylesheet" />
+    <link rel="icon" href="../img/js.png" sizes="32x32" type="image/png" />
+    <title>Manejando eventos</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Formulario de Estudiante</h1>
+        <form id="studentForm" class="mt-4">
+            <div class="mb-3">
+                <label for="carnet" class="form-label">Carnet (Formato: AB001):</label>
+                <input type="text" class="form-control" id="carnet" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre Completo:</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="dui" class="form-label">Número de DUI (Formato: ########-#):</label>
+                <input type="text" class="form-control" id="dui" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="nit" class="form-label">Número de NIT (Formato: ####-######-###-#):</label>
+                <input type="text" class="form-control" id="nit" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento (Formato: DD/MM/YYYY):</label>
+                <input type="text" class="form-control" id="fechaNacimiento" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo Electrónico:</label>
+                <input type="email" class="form-control" id="correo" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="edad" class="form-label">Edad:</label>
+                <input type="number" class="form-control" id="edad" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Scripts de Bootstrap y tu archivo JavaScript -->
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/ejercicioComplementario2.js" defer></script>
+</body>
+</html>
